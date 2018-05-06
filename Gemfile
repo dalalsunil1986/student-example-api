@@ -9,6 +9,9 @@ gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 gem 'rack-cors'
 gem 'active_model_serializers'
+gem 'devise'
+gem 'faker'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
