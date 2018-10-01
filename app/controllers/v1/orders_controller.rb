@@ -2,7 +2,8 @@ class V1::OrdersController < ApplicationController
   skip_before_action :verify_authenticity_token, raise: false
 
   def show
-    order
+    render json: ActiveModelSerializers::SerializableResource.new(order).as_json(include: {   order_items: { include: :product }
+    })
   end
 
   def create

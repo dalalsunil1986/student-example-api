@@ -1,5 +1,7 @@
 class V1::OrderItemSerializer < ActiveModel::Serializer
-  attributes :id, :name, :price, :image, :description
+  attributes :id, :qty
 
   belongs_to :order
+  belongs_to :product
+  
 end
