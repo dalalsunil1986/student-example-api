@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.4'
-gem 'pg', '~> 0.18'
+gem 'pg', '0.18'
 gem 'rack-cors'
 gem 'active_model_serializers'
 gem 'devise'

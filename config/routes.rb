@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     
     resources :facts
     resources :contacts
+
+    resources :orders
   end
 
 end
